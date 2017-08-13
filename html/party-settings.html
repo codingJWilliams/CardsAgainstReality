@@ -21,30 +21,43 @@
           <h5>
               Made with ❤ by Jay Williams
             </h5>
-          <h3>
-            <small>
-              <span class="label label-danger">
-                Note: Can be NSFW if enabled
-              </span>
-            </small>
-          </h3>
           <br>
         </h1>
 
-      <br>
-      <button onclick="createParty()" class="btn btn-primary"> Create Party </button>
-      <button onclick="joinParty()" style="display: inline" class="btn btn-success"> Join Party </button>
       <br><br><br>
-
     </center>
-    <footer>
-      This site is not endorsed by Cards against humanity nor does it claim to be. All resemblance is pure coincidence.
-    </footer>
+    <div class="row">
+      <div class="col-md-2"></div>
+      <div class="col-md-8">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title">Game options</h3>
+          </div>
+          <div class="panel-body">
+            <div class="row">
+              <div class="col-xs-8">
+                Would you like to enable NSFW cards?<br>
+                Would you like to enable "Type Anything" cards?
+              </div>
+              <div class="col-xs-4">
+                <input type="checkbox"><br>
+                <input type="checkbox">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-2"></div>
+    </div>
+    <center>
+      <br>
+      <footer style="display: block">
+        This site is not endorsed by Cards against humanity nor does it claim to be. All resemblance is pure coincidence.
+      </footer>
+    </center>
   </div>
   <script>
-    function createParty() {
-      window.location.href = "/party-settings/"
-    }
+
 
     </script>
   <!-- Optional JavaScript -->

@@ -5,7 +5,9 @@ var io = require('socket.io')(http);
 app.get('/', function(req, res){
   res.sendFile(__dirname + '/html/lobby.html');
 });
-
+app.get("/party-settings/", function(req, res){
+  res.sendFile(__dirname + "/html/party-settings.html")
+})
 io.on('connection', function(socket){
   console.log('a user connected');
 });
