@@ -9,7 +9,7 @@ app.get("/party-settings/", function(req, res){
   res.sendFile(__dirname + "/html/party-settings.html")
 })
 io.on('connection', function(socket){
-  console.log('a user connected');
+  console.log('User joined your channel');
 });
 
 http.listen(3000, function(){
